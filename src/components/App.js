@@ -58,7 +58,7 @@ class App extends Component {
         })
       }
     } else {
-      window.alert('DStorage contract not deployed to detected network.')
+      window.alert('MyM3d contract not deployed to detected network.')
     }
   }
 
@@ -142,15 +142,15 @@ class App extends Component {
   render() {
     return (
       <div>
-      
+
         {
           this.state.loading
-          ? 
+          ?
             <div id="loader" className="text-center mt-5">
               <img src="https://codemyui.com/wp-content/uploads/2017/11/solid-colour-slide-puzzle-style-loading-animation.gif" alt="loading gif" />
               <p>Loading...</p>
             </div>
-          : 
+          :
            <div>
              <Navbar account={this.state.account} balance={this.state.balance} />
              <Main
@@ -160,7 +160,7 @@ class App extends Component {
               />
            </div>
         }
-        
+
       </div>
     );
   }
